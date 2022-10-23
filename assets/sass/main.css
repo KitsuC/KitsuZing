@@ -1,0 +1,315 @@
+.myAlbum {
+  padding-top: 70px;
+}
+.myAlbum-text {
+  color: var(--white-color);
+  display: flex;
+}
+.myAlbum-text h2 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 42px;
+  margin-right: 14px;
+}
+.myAlbum-text button {
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+  background-color: #ed2b91;
+  cursor: pointer;
+}
+.myAlbum-text button svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myAlbum ul {
+  margin-top: 48px;
+  display: flex;
+}
+.myAlbum ul li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 30px;
+  margin-left: -30px;
+}
+.myAlbum ul li .circle {
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  position: relative;
+}
+.myAlbum ul li .circle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: var(--white-color);
+}
+.myAlbum ul li:last-child:hover {
+  cursor: pointer;
+}
+.myAlbum ul li:last-child:hover a {
+  cursor: pointer;
+  color: #c662ef;
+  text-decoration: underline;
+}
+.myAlbum ul li:last-child:hover i {
+  color: #c662ef;
+}
+.myAlbum ul li div {
+  height: 129px;
+  width: 129px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.myAlbum ul li img {
+  height: 129px;
+  border-radius: 50%;
+}
+.myAlbum ul li img:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.8s ease;
+}
+.myAlbum ul li button {
+  background-color: var(--white-color);
+  outline: none;
+  border: none;
+  position: absolute;
+  bottom: 32px;
+  right: 33px;
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.myAlbum ul li button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.myAlbum ul li button i {
+  height: 16px;
+}
+.myAlbum ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white-color);
+  margin-top: 15px;
+  text-align: center;
+}
+.myAlbum ul li a:hover {
+  color: #c662ef;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.myPlay-list {
+  padding-top: 48px;
+}
+.myPlay-list__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.myPlay-list__text h2 {
+  font-size: 20px;
+  color: var(--white-color);
+  margin: 0;
+}
+.myPlay-list__text button {
+  margin-left: 6px;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: hsla(0deg, 0%, 100%, 0.1);
+  border: none;
+  outline: none;
+  padding-top: 3px;
+}
+.myPlay-list__text button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.myPlay-list .playList-item {
+  width: 161px;
+  height: 208px;
+  margin-right: 28px;
+}
+.myPlay-list .playList-item:hover img {
+  opacity: 0.5;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.myPlay-list .playList-item .playList-img {
+  width: 161px;
+  border-radius: 10px;
+  height: 161px;
+  overflow: hidden;
+  position: relative;
+}
+.myPlay-list .playList-item .playList-img:hover .control-img {
+  display: flex;
+}
+.myPlay-list .playList-item .playList-img .control-img {
+  z-index: 99;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+  font-size: 20px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.myPlay-list .playList-item .playList-img .control-img i {
+  padding: 15px;
+}
+.myPlay-list .playList-item .playList-img .control-img .play-img {
+  font-size: 45px;
+}
+.myPlay-list .playList-item img {
+  width: 100%;
+  transition: transform 0.5s ease-out;
+  transition: all 0.5s ease;
+}
+.myPlay-list .playList-item .playList-item-info {
+  color: var(--white-color);
+  cursor: pointer;
+}
+.myPlay-list .playList-item .playList-item-info h2 {
+  font-size: 14px;
+  margin: 10px 0 6px 0;
+}
+.myPlay-list .playList-item .playList-item-info h2:hover {
+  color: #c662ef;
+}
+.myPlay-list .playList-item .playList-item-info span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.myPlay-list .playList-item .playList-item-info span:hover {
+  color: #c662ef;
+}
+
+.info__song {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 18px;
+  padding-left: 10px;
+  height: 46px;
+  border-bottom: 1px solid var(--border-color);
+}
+.info__song .info__song-item__mid {
+  padding-right: 112px;
+}
+.info__song p {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.podcast__new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.podcast__new-img {
+  background-image: url(https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/icons/episode-empty-1.png);
+  height: 120px;
+  width: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.podcast__new h2 {
+  font-size: 16px;
+  color: hsla(0deg, 0%, 100%, 0.5);
+  font-weight: 400;
+}
+
+.toast__item {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(17, 129, 233);
+  padding: 10px 20px;
+  margin: 10px 0;
+  -webkit-animation: slideInLeft ease 0.3s, fadeOut linear 1s 3s forwards;
+          animation: slideInLeft ease 0.3s, fadeOut linear 1s 3s forwards;
+  cursor: default;
+  position: relative;
+  border-bottom: 2px solid #fadce7;
+  padding-bottom: 0;
+  border-radius: 10px;
+}
+.toast__item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 26px;
+  border-radius: 8px;
+  left: -540px;
+  width: 600px;
+  height: 30px;
+  background-color: #f39bbb;
+  border: 1px solid #fadce7;
+}
+.toast__item .toast-img {
+  background-image: url(/assets/img/notifi/remnoti2.png);
+  height: 200px;
+  width: 154px;
+}
+
+.maybe {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.maybe h2 {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+.maybe img {
+  width: 161px;
+  height: 161px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.maybe .item__title {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.maybe .item__title h2 {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+.maybe .item__title span {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+
+.mobile-player {
+  z-index: 9999999;
+}
+
+.myPlay-list__list {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */
